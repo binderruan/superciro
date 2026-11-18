@@ -16,7 +16,7 @@ function reset(){
 function start(){
  if(running)return;reset();running=true;startScreen.hidden=true;gameOver.hidden=true;orientationMessage();lockLandscape();
  if(document.documentElement.requestFullscreen)document.documentElement.requestFullscreen().catch(()=>{});
- pipe.style.animation='pipe-animations 1.5s infinite linear';gameLoop();
+ pipe.style.animation='pipe-animations 1.0s infinite linear';gameLoop();
 }
 function jump(){
  if(!running||portrait()||mario.classList.contains('jump'))return;
